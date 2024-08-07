@@ -4,10 +4,14 @@
  *     int val;
  *     ListNode next;
  *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ *     ListNode(int val){ this.val = val; }
+ *     ListNode(int val,ListNode next){ this.val = val; this.next = next; }
  * }
  */
+
+Input: head = [1,2,3,4,5], left = 2, right = 4
+Output: [1,4,3,2,5]
+    
 class Solution {
     public ListNode reverseBetween(ListNode head, int left, int right) {
         if(left==right)
